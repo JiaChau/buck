@@ -1,0 +1,19 @@
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+button {
+    transition: background-color 0.3s ease;
+}
+
+.hidden {
+    display: none;
+}
+
+.min-h-screen {
+    min-height: 100vh;
+}
+
+.space-y-4 > * + * {
+    margin-top: 1rem;
+}

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bucket List & Projects</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body class="bg-gray-100 text-gray-800">
+    <!-- Home Page -->
+    <div id="home" class="min-h-screen flex flex-col items-center justify-center text-center space-y-8">
+        <h1 class="text-4xl font-bold">Buck</h1>
+        <p class="text-lg">jc</p>
+        <div class="space-x-4">
+            <button onclick="navigateTo('bucket-list')" class="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600">View Bucket List</button>
+            <button onclick="navigateTo('projects')" class="px-4 py-2 bg-green-500 text-white rounded hover:bg-green-600">Explore Projects</button>
+        </div>
+    </div>
+
+    <!-- Bucket List Page -->
+    <div id="bucket-list" class="hidden min-h-screen p-8 space-y-4">
+        <button onclick="navigateTo('home')" class="mb-4 px-4 py-2 bg-gray-300 text-black rounded hover:bg-gray-400">Back to Home</button>
+        <h2 class="text-3xl font-bold">Bucket List</h2>
+        <div class="space-y-4">
+            <div>
+                <h3 class="text-xl font-semibold">Travel</h3>
+                <ul class="list-disc pl-6">
+                    <li>Visit the Great Wall of China</li>
+                    <li>See the Northern Lights</li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="text-xl font-semibold">Skills</h3>
+                <ul class="list-disc pl-6">
+                    <li>Learn Spanish</li>
+                    <li>Master Photography</li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="text-xl font-semibold">Experiences</h3>
+                <ul class="list-disc pl-6">
+                    <li>Skydiving</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Projects Page -->
+    <div id="projects" class="hidden min-h-screen p-8 space-y-4">
+        <button onclick="navigateTo('home')" class="mb-4 px-4 py-2 bg-gray-300 text-black rounded hover:bg-gray-400">Back to Home</button>
+        <h2 class="text-3xl font-bold">Projects</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div class="p-4 bg-white shadow rounded">
+                <h3 class="text-xl font-semibold">Project 1</h3>
+                <p>A brief description of Project 1.</p>
+                <button class="mt-2 px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600">View More</button>
+            </div>
+            <div class="p-4 bg-white shadow rounded">
+                <h3 class="text-xl font-semibold">Project 2</h3>
+                <p>A brief description of Project 2.</p>
+                <button class="mt-2 px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600">View More</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
