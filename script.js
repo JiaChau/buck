@@ -1,3 +1,4 @@
+
 function navigateTo(sectionId) {
     document.querySelectorAll("body > div").forEach((section) => {
         section.classList.add("hidden");
